@@ -1,0 +1,22 @@
+{
+  "name": "api-rest-galt",
+  "version": "1.0.0",
+  "main": "src/app.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/app.js"
+  },
+  "author": "steckler",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cors": "2.8.6",
+    "express": "5.2.1",
+    "install": "0.13.0",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "dotenv": "17.3.1"
+  }
+}
