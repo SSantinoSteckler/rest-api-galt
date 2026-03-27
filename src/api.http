@@ -14,18 +14,29 @@ POST http://localhost:1234/movies
 Content-Type:application/json
 
 {
-    "title":"Forrest gump",
-    "year": 1990
+  "title": "pedro",
+  "year": 1997,
+  "director": "James Cameron",
+  "duration": 195,
+  "rate": 7.9,
+  "poster": "https://....",
+  "genre": ["Drama", "Romance"]
 }
 
 
 
-###
+### Actualizar una pelicula
 PATCH http://localhost:1234/movies/6a360a18-c645-4b47-9a7b-2a71babbf3e0
 Content-Type: application/json
 
 {
     "title": "hola",
-    "year": 1994,
+    "year": 1994
    
 }
+
+
+### Borrar una pelicula
+
+DELETE  http://localhost:1234/movies/6a360a18-c645-4b47-9a7b-2a71babbf3e0
+
