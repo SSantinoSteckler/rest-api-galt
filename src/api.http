@@ -3,8 +3,7 @@ GET http://localhost:1234/movies
 
 ### Recuperar peliculas por ID
 
-GET http://localhost:1234/movies/c8a7d63f-3b04-44d3-9d95-8782fd7dcfaf
-
+GET http://localhost:1234/movies/499b9f46-29f3-11f1-bce0-10ffe0cda76b
 ### Recuperar todas las peliculas por un genero
 
 GET http://localhost:1234/movies?genre=Action
@@ -14,7 +13,7 @@ POST http://localhost:1234/movies
 Content-Type:application/json
 
 {
-  "title": "pedro",
+  "title": "pedr",
   "year": 1997,
   "director": "James Cameron",
   "duration": 195,
@@ -26,17 +25,16 @@ Content-Type:application/json
 
 
 ### Actualizar una pelicula
-PATCH http://localhost:1234/movies/6a360a18-c645-4b47-9a7b-2a71babbf3e0
+PATCH http://localhost:1234/movies/d54c7d93-2a5e-11f1-bce0-10ffe0cda76b
 Content-Type: application/json
 
 {
     "title": "hola",
     "year": 1994
-   
 }
 
 
 ### Borrar una pelicula
 
-DELETE  http://localhost:1234/movies/6a360a18-c645-4b47-9a7b-2a71babbf3e0
+DELETE  http://localhost:1234/movies/f2cee501-2a5e-11f1-bce0-10ffe0cda76b
 

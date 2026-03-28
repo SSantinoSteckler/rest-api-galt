@@ -1,5 +1,6 @@
-import { MovieModel } from "../models/local-file-system/movie.model.local.js";
+// import { MovieModel } from "../models/local-file-system/movie.model.local.js";
 import { validateMovie, validatePartialMovie } from "../schemas/movies.js";
+import { MovieModel } from "../models/mysql/movie-sql.js";
 
 export class MovieController {
   static async getAll(req, res) {
@@ -7,7 +8,7 @@ export class MovieController {
     const movies = await MovieModel.getAll({ genre });
 
     //El controlador decidira que es lo q renderiza
-    res.json(movies);
+    if (movies) return res.json(movies);
 
     res.status(500).json({ message: error.message });
   }
